@@ -1,17 +1,17 @@
 <launch>
   <arg name="model" default="waffle_pi"/>
-  <arg name="x_pos" default="0.62"/>
-  <arg name="y_pos" default="8.16"/>
+  <arg name="x_pos" default="1"/>
+  <arg name="y_pos" default="-8.0"/>
   <arg name="z_pos" default="0.0"/>
   <arg name="roll" default="0"/>
   <arg name="pitch" default="0"/>
-  <arg name="yaw" default="-3.13"/>
+  <arg name="yaw" default="1.5"/>
   <arg name="set_base_frame" default="base_footprint"/>
   <arg name="set_odom_frame" default="odom"/>
   <arg name="set_map_frame"  default="map"/>
 
   <include file="$(find gazebo_ros)/launch/empty_world.launch">
-    <arg name="world_name" value="$(find cva_gym)/worlds/simple_circuit.world"/>
+    <arg name="world_name" value="$(find cva_gym)/worlds/simple_circuit2.world"/>
     <arg name="paused" value="false"/>
     <arg name="use_sim_time" value="true"/>
     <arg name="gui" value="true"/>
